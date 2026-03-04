@@ -16,3 +16,4 @@ console.log(telefonepessoa)
 
 // se pode criar variaveis com letras maiúsculas e minusculas 
 // não se pode criar variaveis com espaço. 
+
