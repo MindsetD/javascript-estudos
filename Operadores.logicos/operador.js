@@ -25,6 +25,19 @@
 
 ---- a > = b?, aqui eu pergunto a é maior ou igual a b?, se for igual é true, se for menor é false.
 
+-- 2 PARTE
+
+-- E (&&) SERVE PARA VER SE UMA EXPRESSÃO É FALSA OU VERDADEIRA, SE ALGUMA OPERAÇÃO SAIR O VALOR FALSO
+// A EXPRESSÃO INTEIRA SE TORNA FALSA, MAS SE TIVEREM VALORES VERDADEIROS TODAS OPERAÇÕES AI SERÃO TRUE. 
+(&&)
+
+-- || OU, AQUI É COMO SE FALASSEMOS OU NO CASO SE A 1 É VERDADEIRA, A OPERAÇÃO INTEIRA VAI SER VERDADEIRA. 
+MESMO QUE SEJA A 1 V E A F = DA TRUE, E SE FOR 1 F E A 2 V SERÁ TRUE. 
+SE TODAS AS EXPRESSÕES FOREM FALSAS, AI NO FINAL VAI DA FFF = FALSO. (||)
+
+-- (!) AQUI INVERTE OS VALORES SE A OPERAÇÃO FOR VERDADEIRA -> ELA SE TORNA FALSE
+- SE A OPERAÇÃO FOR FALSA, ELA SE TORNA --> VERDADEIRA. (!())
+
 */
 
 
@@ -79,4 +92,21 @@
 const a = 1
 const b = 1
 
-console.log(a >= b)
+//console.log(a === b && a > b ) // da falso pois a pode ser identivo (v), mas a não é maior que B.
+
+// console.log(a === b && b===a) // da verdadeiro pois os dois são identicos 
+
+//console.log( a===b && b >= a) // da verdadeiro pois b não é maior mais é igual a A, e a igual a B. 
+
+// console.log(a > b && b<a) // falso pois ambos tem o mesmo valor e são iguais. 
+
+//console.log(a===b || a>b ) // da verdadeiro pois A é identico a b, só precisamos de 1 verdade
+//  pra ser true.
+
+// console.log(a > b || b==a ) // da verdadeiro pois b é identico a A 
+
+//console.log( a>b || b > a) // da falso, pois as duas sentenças são falsas os dois possui valor igual.
+
+console.log(!(a==b)) // ESSE É FALSO, PORQUE ELE INVERTE A EXPRESSÃO, NÃO NÃO É IGUAL A B. 
+console.log(!(a > b)) // ELE DIZ QUE É VERDADEIRO, SÓ QUE NA VERDADE 
+// É FALSO POIS B E A TEM VALORES IGUAIS.
